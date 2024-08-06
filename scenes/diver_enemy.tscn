@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://gql5j1pmhil3"]
+
+[ext_resource type="PackedScene" uid="uid://drq0hd5i8i7ag" path="res://scenes/enemy.tscn" id="1_wmrqt"]
+[ext_resource type="Texture2D" uid="uid://dwggv4hlexhba" path="res://assets/enemies/enemyBlack2.png" id="2_onk30"]
+
+[node name="DiverEnemy" instance=ExtResource("1_wmrqt")]
+
+[node name="Sprite2D" parent="." index="0"]
+texture = ExtResource("2_onk30")
+
+[node name="CollisionShape2D" parent="." index="1"]
+scale = Vector2(1.12, 1)
+
+[node name="VisibleOnScreenNotifier2D" parent="." index="2"]
+position = Vector2(1, -44)
